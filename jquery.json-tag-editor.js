@@ -261,8 +261,10 @@
                                 loc = 'after';
                                 d = e.pageX - tagX - tag.width();
                             }
-                            if (d < dist) dist = d;
-                            closestTag = tag;
+                            if (d < dist) {
+                                dist = d;
+                                closestTag = tag;
+                            } 
                         }
                     });
                 }
